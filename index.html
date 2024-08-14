@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charan Tej D's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .details {
+            display: none;
+            margin-top: 20px;
+        }
+        .show-btn {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+        .show-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -34,55 +56,58 @@
         <div class="project-grid">
             <div class="project-card">
                 <h3>CSV Engineer: ND Global Consulting Services</h3>
-                <p><strong>Location:</strong> Remote, USA</p>
-                <p><strong>Duration:</strong> Jun 2023 – May 2024</p>
-                <ul>
-                    <li>Assisted in designing and validating 21 CFR Part 11 compliance strategies for Laboratory Information Management Systems (LIMS), including Electronic Records (ER), Electronic Signatures (ES), and Audit Trails.</li>
-                    <li>Participated in Part 11 assessments, focusing on compliance components and supporting UAT development, including test plans and protocols for IQ, OQ, and PQ specifications.</li>
-                    <li>Conducted data integrity assessments, gap analysis, and remediation activities to ensure system compliance.</li>
-                    <li>Created and reviewed validation and quality compliance documents, such as Validation Protocols, IQ, OQ, and PQ documents.</li>
-                    <li>Generated CSV deliverables and supported compliance with 21 CFR Part 11, GxP FDA Regulations, and enterprise CSV-related initiatives.</li>
-                    <li>Involved in validation activities for the global implementation of Veeva Vault QMS system (CAPA, Complaints, Audits, and Change Control Management modules).</li>
-                    <li>Assisted in developing detailed Project Plans and reviewed User Requirement Specifications (URS) and Functional Requirements Specifications (FRS).</li>
-                    <li>Contributed to authoring validation plans, Test Plans, PQ Protocols, Test Summary Reports, and Requirement Traceability Matrix (RTM).</li>
-                    <li>Participated in end-to-end testing phases, including User Acceptance Testing, Functionality Testing, Regression Testing, and System Testing.</li>
-                </ul>
+                <button class="show-btn" onclick="toggleDetails('details1')">Show Details</button>
+                <div id="details1" class="details">
+                    <ul>
+                        <li>Assisted in designing and validating 21 CFR Part 11 compliance strategies for Laboratory Information Management Systems (LIMS), including Electronic Records (ER), Electronic Signatures (ES), and Audit Trails.</li>
+                        <li>Participated in Part 11 assessments, focusing on compliance components and supporting UAT development, including test plans and protocols for IQ, OQ, and PQ specifications.</li>
+                        <li>Conducted data integrity assessments, gap analysis, and remediation activities to ensure system compliance.</li>
+                        <li>Created and reviewed validation and quality compliance documents, such as Validation Protocols, IQ, OQ, and PQ documents.</li>
+                        <li>Generated CSV deliverables and supported compliance with 21 CFR Part 11, GxP FDA Regulations, and enterprise CSV-related initiatives.</li>
+                        <li>Involved in validation activities for the global implementation of Veeva Vault QMS system (CAPA, Complaints, Audits, and Change Control Management modules).</li>
+                        <li>Assisted in developing detailed Project Plans and reviewed User Requirement Specifications (URS) and Functional Requirements Specifications (FRS).</li>
+                        <li>Contributed to authoring validation plans, Test Plans, PQ Protocols, Test Summary Reports, and Requirement Traceability Matrix (RTM).</li>
+                        <li>Participated in end-to-end testing phases, including User Acceptance Testing, Functionality Testing, Regression Testing, and System Testing.</li>
+                    </ul>
+                </div>
             </div>
             <div class="project-card">
                 <h3>Automation Testing Lead: Prowess Solutions</h3>
-                <p><strong>Location:</strong> USA</p>
-                <p><strong>Duration:</strong> Oct 2021 – Jul 2022</p>
-                <ul>
-                    <li>Established and optimized the testing environment, leading a team of 8 testers and reducing setup time by 25%.</li>
-                    <li>Developed and executed automated test scripts using HTML5, CSS, Bootstrap, JavaScript, jQuery, and MS SQL. Directed testing for Notification Service migration, improving error handling and system efficiency by 15%.</li>
-                </ul>
+                <button class="show-btn" onclick="toggleDetails('details2')">Show Details</button>
+                <div id="details2" class="details">
+                    <ul>
+                        <li>Established and optimized the testing environment, leading a team of 8 testers and reducing setup time by 25%.</li>
+                        <li>Developed and executed automated test scripts using HTML5, CSS, Bootstrap, JavaScript, jQuery, and MS SQL. Directed testing for Notification Service migration, improving error handling and system efficiency by 15%.</li>
+                    </ul>
+                </div>
             </div>
             <div class="project-card">
                 <h3>Associate IT Consultant: ITC Infotech</h3>
-                <p><strong>Location:</strong> USA</p>
-                <p><strong>Duration:</strong> Aug 2018 – Sep 2021</p>
-                <ul>
-                    <li><strong>Project - OBI (CSV Automation Testing with QTP):</strong>
-                        <ul>
-                            <li>Designed and implemented 21 CFR Part 11 compliance strategies for LIMS, focusing on Electronic Records, Electronic Signatures, and Audit Trails.</li>
-                            <li>Developed and integrated QTP scripts for CSV automation, reducing validation time by 40% and increasing accuracy by 25%.</li>
-                            <li>Created a centralized dashboard within the CI/CD pipeline for monitoring and reporting CSV validation results.</li>
-                            <li>Drafted and executed qualification protocols for systems including historian and SCADA, and managed data migration planning.</li>
-                            <li>Performed data integrity assessments and gap analysis, ensuring compliance with 21 CFR Part 11 and GxP regulations.</li>
-                            <li>Provided guidance on CSV strategies and documentation, supporting enterprise CSV initiatives and remediation activities.</li>
-                        </ul>
-                    </li>
-                    <li><strong>Project - HR Connect (Data-Driven CSV Framework Using Selenium Webdriver):</strong>
-                        <ul>
-                            <li>Automated Selenium script integration and validation framework deployments, reducing issue detection time by 50% and deployment time by 70%.</li>
-                            <li>Authored and executed Automation Installation Operational Qualification (AOQ) protocols for manufacturing equipment, ensuring GxP compliance.</li>
-                            <li>Led data integrity and remediation projects, focusing on data migration, periodic reviews, and CAPA processes.</li>
-                            <li>Participated in the Validation Life Cycle (VLC), including planning, implementation, and documentation for enterprise systems.</li>
-                            <li>Provided training on QTP and Selenium, enhancing team skills in automated CSV testing and improving validation practices.</li>
-                            <li>Contributed to the global implementation of Veeva Vault QMS, focusing on CAPA, Complaints, Audits, and Change Control Management modules.</li>
-                        </ul>
-                    </li>
-                </ul>
+                <button class="show-btn" onclick="toggleDetails('details3')">Show Details</button>
+                <div id="details3" class="details">
+                    <ul>
+                        <li><strong>Project - OBI (CSV Automation Testing with QTP):</strong>
+                            <ul>
+                                <li>Designed and implemented 21 CFR Part 11 compliance strategies for LIMS, focusing on Electronic Records, Electronic Signatures, and Audit Trails.</li>
+                                <li>Developed and integrated QTP scripts for CSV automation, reducing validation time by 40% and increasing accuracy by 25%.</li>
+                                <li>Created a centralized dashboard within the CI/CD pipeline for monitoring and reporting CSV validation results.</li>
+                                <li>Drafted and executed qualification protocols for systems including historian and SCADA, and managed data migration planning.</li>
+                                <li>Performed data integrity assessments and gap analysis, ensuring compliance with 21 CFR Part 11 and GxP regulations.</li>
+                                <li>Provided guidance on CSV strategies and documentation, supporting enterprise CSV initiatives and remediation activities.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Project - HR Connect (Data-Driven CSV Framework Using Selenium Webdriver):</strong>
+                            <ul>
+                                <li>Automated Selenium script integration and validation framework deployments, reducing issue detection time by 50% and deployment time by 70%.</li>
+                                <li>Authored and executed Automation Installation Operational Qualification (AOQ) protocols for manufacturing equipment, ensuring GxP compliance.</li>
+                                <li>Led data integrity and remediation projects, focusing on data migration, periodic reviews, and CAPA processes.</li>
+                                <li>Participated in the Validation Life Cycle (VLC), including planning, implementation, and documentation for enterprise systems.</li>
+                                <li>Provided training on QTP and Selenium, enhancing team skills in automated CSV testing and improving validation practices.</li>
+                                <li>Contributed to the global implementation of Veeva Vault QMS, focusing on CAPA, Complaints, Audits, and Change Control Management modules.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -110,6 +135,16 @@
         <p>© 2024 Charan Tej D's Portfolio</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        function toggleDetails(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none" || element.style.display === "" ) {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
+
