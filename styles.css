@@ -34,12 +34,15 @@ header p {
 
 /* Biodata Section */
 #biodata {
-    text-align: center;
-    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding: 2rem;
     background: #fff;
-    margin-top: 2rem;
     animation: fadeIn 2s ease-in;
 }
+
 
 #biodata img {
     width: 150px;
