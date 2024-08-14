@@ -8,121 +8,127 @@
 
 /* Body Styling */
 body {
-    background-color: #f0f2f5;
+    background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
     overflow-x: hidden;
 }
 
+/* Container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
 /* Header Styling */
 header {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 2rem 0;
     text-align: center;
-    background: #1e2a38;
-    color: #fff;
-    padding: 3rem 1rem;
-    animation: slideIn 1.5s ease-out;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease-out;
 }
 
 header h1 {
-    font-size: 3.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 3rem;
 }
 
 header p {
-    font-size: 1.3rem;
-    margin-top: 0;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
 }
 
 /* Biodata Section */
 #biodata {
-    text-align: center;
-    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
     background: #fff;
     margin-top: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    animation: fadeIn 2s ease-in;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    animation: slideIn 1s ease-out;
+    text-align: center;
 }
 
-#biodata img {
+.bio-img img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 4px solid #1e2a38;
+    border: 4px solid #2c3e50;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     margin-bottom: 1rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-#biodata p {
-    font-size: 1.2rem;
-    color: #666;
+.bio-info p {
+    font-size: 1.1rem;
+    color: #555;
 }
 
 /* Section Headers */
 section h2 {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-size: 2.5rem;
-    color: #1e2a38;
-    border-bottom: 2px solid #1e2a38;
+    color: #2c3e50;
+    border-bottom: 3px solid #2c3e50;
     padding-bottom: 0.5rem;
 }
 
 /* Professional Summary Section */
 #summary {
-    padding: 2rem 1rem;
-    background: #e9ecef;
+    padding: 2rem;
+    background: #e8f1f2;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    animation: slideIn 2s ease-out;
-}
-
-#summary p {
-    font-size: 1.2rem;
-    color: #555;
-    text-align: justify;
+    animation: fadeIn 1.5s ease-in;
 }
 
 /* Experience Section */
 #experience {
-    padding: 2rem 1rem;
+    padding: 2rem;
+}
+
+.experience-item {
+    background: #fff;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    animation: fadeIn 2s ease-in;
+    animation: slideIn 1.5s ease-out;
 }
 
-#experience h3 {
-    color: #1e2a38;
-    margin-top: 1rem;
-    font-size: 1.8rem;
+.experience-item h3 {
+    color: #2c3e50;
 }
 
-#experience p {
+.experience-item p {
     font-style: italic;
     color: #777;
-    margin-bottom: 1rem;
 }
 
-#experience ul {
-    list-style-type: none;
+.experience-item ul {
+    list-style: none;
     padding: 0;
 }
 
-#experience ul li {
-    background: #fff;
-    padding: 1rem;
+.experience-item ul li {
+    background: #f1f1f1;
     margin-bottom: 0.5rem;
-    border-left: 4px solid #1e2a38;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 0.5rem;
+    border-left: 5px solid #2c3e50;
 }
 
 /* Skills Section */
 #skills {
-    padding: 2rem 1rem;
-    background: #f0f2f5;
+    padding: 2rem;
+    background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    animation: slideIn 2s ease-out;
+    animation: fadeIn 2s ease-in;
 }
 
 #skills ul {
@@ -133,7 +139,7 @@ section h2 {
 }
 
 #skills ul li {
-    background: #1e2a38;
+    background: #2c3e50;
     color: #fff;
     padding: 1rem;
     margin: 0.5rem;
@@ -143,12 +149,13 @@ section h2 {
 
 #skills ul li:hover {
     transform: scale(1.1);
-    background: #16222b;
+    background: #34495e;
 }
 
 /* Education Section */
 #education {
-    padding: 2rem 1rem;
+    padding: 2rem;
+    background: #f1f1f1;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     animation: fadeIn 2s ease-in;
@@ -157,20 +164,20 @@ section h2 {
 /* Footer */
 footer {
     text-align: center;
-    background: #1e2a38;
-    color: #fff;
-    padding: 1rem 1rem;
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 1rem 0;
     margin-top: 2rem;
 }
 
 /* Animations */
 @keyframes slideIn {
     from {
-        transform: translateX(-100%);
+        transform: translateY(-30px);
         opacity: 0;
     }
     to {
-        transform: translateX(0);
+        transform: translateY(0);
         opacity: 1;
     }
 }
