@@ -37,12 +37,11 @@ header p {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
-    padding: 2rem;
+    padding: 2rem 0;
     background: #fff;
     animation: fadeIn 2s ease-in;
+    height: 70vh; /* Adjust the height as needed */
 }
-
 
 #biodata img {
     width: 150px;
