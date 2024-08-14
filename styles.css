@@ -1,3 +1,5 @@
+/* styles.css */
+
 /* Basic Reset */
 * {
     margin: 0;
@@ -34,13 +36,19 @@ header p {
 
 /* Biodata Section */
 #biodata {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     padding: 2rem 0;
     background: #fff;
+    margin-top: 2rem;
     animation: fadeIn 2s ease-in;
-    height: 30vh; /* Adjust the height as needed */
+}
+
+#biodata img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #333;
+    margin-bottom: 1rem;
 }
 
 #biodata p {
